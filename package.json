@@ -5,8 +5,10 @@
   "description": "[![Actions Status](https://github.com/OwlBob/backend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/OwlBob/backend-project-44/actions)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node bin/brain-games.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "brain-games": "bin/brain-games.js"
   },
   "author": "OwlBob",
   "license": "ISC"
