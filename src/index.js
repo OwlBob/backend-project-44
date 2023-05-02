@@ -20,16 +20,16 @@ const brainGames = (gameRules, questionAnswer) => {
     let roundResult; // сравнение полученного ответа юзера с правильным ответом
     if (userAnswer === strRightAnswer) {
       roundResult = 'Correct!';
-      console.log(roundResult);
+      console.log(roundResult); // (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧
     }
     if (userAnswer !== strRightAnswer) {
       roundResult = `'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.\nLet's try again, ${userName}!`;
-      console.log(roundResult);
+      console.log(roundResult); // (╮°-°)╮┳━━┳ ( ╯°□°)╯ ┻━━┻
       break;
     }
 
     if (i === numberOfRounds) {
-      console.log(`Congratulations, ${userName}!`);
+      console.log(`Congratulations, ${userName}!`); // (((o(*°▽°*)o))) после brain-gcd это победа!
     }
   }
 };
