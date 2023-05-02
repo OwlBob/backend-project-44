@@ -3,7 +3,7 @@ import { cons } from '@hexlet/pairs';
 import generateRandomNum from '../tools.js';
 import brainGames from '../index.js';
 
-const gameRules = 'Answer "yes" if the generateRoundQuestionber is even, otherwise answer "no".';
+const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const questionAnswer = () => {
   const generateRoundQuestion = generateRandomNum(1, 1000);

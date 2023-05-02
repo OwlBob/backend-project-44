@@ -5,16 +5,18 @@ import { car, cdr } from '@hexlet/pairs';
 import sayHello from './cli.js';
 
 const brainGames = (gameRules, questionAnswer) => {
-  const userName = sayHello(); // всегда игра начинается с приветсвия и с вопроса об имени игрока
+  const userName = sayHello(); // игра начинается с приветсвия и с вопроса об имени игрока
   console.log(gameRules);
-  const numberOfRounds = 3; // всегда во всех играх три раунда
+  const numberOfRounds = 3; // во всех играх одинаковое количество раундов
   for (let i = 1; i <= numberOfRounds; i += 1) {
     // формирования первой итерации с вопросом и формирования ответа
     const step = questionAnswer();
     const question = car(step);
     const rightAnswer = cdr(step);
-    const userAnswer = readlineSync.question(`Question: ${question}\n Your anwer: `);
     const strRightAnswer = String(rightAnswer);
+
+    const userAnswer = readlineSync.question(`Question: ${question}\nYour anwer: `);
+
     let roundResult; // сравнение полученного ответа юзера с правильным ответом
     if (userAnswer === strRightAnswer) {
       roundResult = 'Correct!';
