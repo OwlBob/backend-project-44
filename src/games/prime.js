@@ -5,7 +5,7 @@ import brainGames from '../index.js';
 
 const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const determinePrimeorNot = (num) => {
+const determinePrimeOrNot = (num) => {
   if (num === 1) {
     return null;
   } if (num === 2) {
@@ -21,7 +21,7 @@ const determinePrimeorNot = (num) => {
 
 const questionAnswer = () => {
   const generateRoundQuestion = generateRandomNum(2, 100);
-  const rightAnswer = determinePrimeorNot(generateRoundQuestion);
+  const rightAnswer = determinePrimeOrNot(generateRoundQuestion);
 
   return cons(generateRoundQuestion, rightAnswer);
 };
