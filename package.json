@@ -1,6 +1,6 @@
 {
   "name": "@hexlet/code",
-  "version": "2.13.16",
+  "version": "2.13.17",
   "type": "module",
   "description": "[![Actions Status](https://github.com/OwlBob/backend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/OwlBob/backend-project-44/actions)",
   "main": "index.js",
