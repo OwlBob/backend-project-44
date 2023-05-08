@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { cons } from '@hexlet/pairs';
 import generateRandomNum from '../tools.js';
 import brainGames from '../index.js';
@@ -17,7 +16,8 @@ const questionAnswer = () => {
   const secondNum = generateRandomNum(0, 100);
   const generateRoundQuestion = `${firstNum} ${secondNum}`;
 
-  const rightAnswer = getNod(firstNum, secondNum);
+  const strRightAnswer = getNod(firstNum, secondNum);
+  const rightAnswer = String(strRightAnswer);
 
   return cons(generateRoundQuestion, rightAnswer);
 };

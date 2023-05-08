@@ -1,5 +1,17 @@
 ### Hexlet tests and linter status & Maintainability Badge:
 [![Actions Status](https://github.com/OwlBob/backend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/OwlBob/backend-project-44/actions)        <a href="https://codeclimate.com/github/OwlBob/backend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/9b754b311b38aeedb46c/maintainability" /></a>
+
+### Установка:
+1. Установите глобально Node.js последней версии в систему;
+2. Склонируйте локально созданный репозиторий проекта ;
+3. В зависимости от ОС,  выполните с помощью команды npm link установку (возможно, потребуется использование sudo).
+4. Команды для запуска игр:
+    brain-even
+    brain-calc
+    brain-gcd
+    brain-progression
+    brain-prime
+
 ### Brain-Even:
 Игра: "Проверка на чётность" ⭐ 
 

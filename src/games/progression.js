@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { cons } from '@hexlet/pairs';
 import generateRandomNum from '../tools.js';
 import brainGames from '../index.js';
@@ -19,7 +18,8 @@ const questionAnswer = () => {
   const fullProgression = makeStepsProgression(firstNum, step);
   const hiddenNum = generateRandomNum(0, fullProgression.length - 1);
 
-  const rightAnswer = fullProgression[hiddenNum];
+  const strRightAnswer = fullProgression[hiddenNum];
+  const rightAnswer = String(strRightAnswer);
 
   fullProgression[hiddenNum] = '..';
 
