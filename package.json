@@ -1,6 +1,6 @@
 {
   "name": "@hexlet/code",
-  "version": "2.13.18",
+  "version": "2.13.19",
   "type": "module",
   "description": "My first project",
   "main": "index.js",
