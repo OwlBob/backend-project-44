@@ -6,21 +6,31 @@ const gameRules = 'What is the result of the expression?';
 
 const operationsSigns = ['+', '-', '*'];
 
+const generateExpression = (firstOperand, randomSigns, secondOperand) => {
+  let result;
+
+  switch (randomSigns) {
+    case '+':
+      result = firstOperand + secondOperand;
+      break;
+    case '-':
+      result = firstOperand - secondOperand;
+      break;
+    case '*':
+      result = firstOperand * secondOperand;
+      break;
+    default:
+  }
+
+  return result;
+};
+
 const questionAnswer = () => {
   const firstOperand = generateRandomNum(1, 5);
   const secondOperand = generateRandomNum(1, 5);
   const randomSigns = operationsSigns[generateRandomNum(0, operationsSigns.length - 1)];
   const generateRoundQuestion = `${firstOperand} ${randomSigns} ${secondOperand}`;
-
-  let strRightAnswer;
-  if (randomSigns === '+') {
-    strRightAnswer = firstOperand + secondOperand;
-  } else if (randomSigns === '-') {
-    strRightAnswer = firstOperand - secondOperand;
-  } else {
-    strRightAnswer = firstOperand * secondOperand;
-  }
-  const rightAnswer = String(strRightAnswer);
+  const rightAnswer = String(generateExpression(firstOperand, randomSigns, secondOperand));
 
   return cons(generateRoundQuestion, rightAnswer);
 };

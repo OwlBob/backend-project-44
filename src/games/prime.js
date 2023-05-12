@@ -4,12 +4,7 @@ import brainGames from '../index.js';
 
 const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const determinePrimeOrNot = (num) => {
-  if (num === 1) {
-    return null;
-  } if (num === 2) {
-    return 'no';
-  }
+const isPrime = (num) => {
   for (let i = 2; i < num; i += 1) {
     if (num % i === 0) {
       return 'no';
@@ -20,7 +15,7 @@ const determinePrimeOrNot = (num) => {
 
 const questionAnswer = () => {
   const generateRoundQuestion = generateRandomNum(2, 100);
-  const rightAnswer = determinePrimeOrNot(generateRoundQuestion);
+  const rightAnswer = isPrime(generateRoundQuestion);
 
   return cons(generateRoundQuestion, rightAnswer);
 };

@@ -12,15 +12,14 @@ const brainGames = (gameRules, questionAnswer) => {
     const rightAnswer = cdr(step);
 
     console.log(`Question: ${question}`);
-    const userAnswer = readlineSync.question('our anwer: ');
+    const userAnswer = readlineSync.question('Your anwer: ');
 
-    if (userAnswer === rightAnswer) {
-      console.log('Correct!');
-    } else {
+    if (userAnswer !== rightAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`);
       console.log(`Let's try again, ${userName}!`);
       return;
     }
+    console.log('Correct!');
   }
   console.log(`Congratulations, ${userName}!`);
 };

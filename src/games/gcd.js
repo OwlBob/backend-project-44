@@ -4,11 +4,11 @@ import brainGames from '../index.js';
 
 const gameRules = 'Find the greatest common divisor of given numbers.';
 
-const getNod = (firstNum, secondNum) => {
+const gcd = (firstNum, secondNum) => {
   if (secondNum === 0) {
     return firstNum;
   }
-  return getNod(secondNum, firstNum % secondNum);
+  return gcd(secondNum, firstNum % secondNum);
 };
 
 const questionAnswer = () => {
@@ -16,7 +16,7 @@ const questionAnswer = () => {
   const secondNum = generateRandomNum(0, 100);
   const generateRoundQuestion = `${firstNum} ${secondNum}`;
 
-  const strRightAnswer = getNod(firstNum, secondNum);
+  const strRightAnswer = gcd(firstNum, secondNum);
   const rightAnswer = String(strRightAnswer);
 
   return cons(generateRoundQuestion, rightAnswer);
