@@ -9,12 +9,12 @@ const lengthProgression = 10;
 const makeProgression = () => {
   const firstNum = generateRandomNum(0, 15);
   const step = generateRandomNum(1, 5);
-  const collNum = [];
+  const progression = [];
   for (let i = 0; i < lengthProgression; i += 1) {
-    collNum.push(firstNum + i * step);
+    progression.push(firstNum + i * step);
   }
 
-  return collNum;
+  return progression;
 };
 
 const questionAnswer = () => {
