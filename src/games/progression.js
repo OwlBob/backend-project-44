@@ -24,9 +24,9 @@ const questionAnswer = () => {
   const rightAnswer = String(fullProgression[hiddenNum]);
 
   fullProgression[hiddenNum] = '..';
-  const generateRoundQuestion = fullProgression.join(' ');
+  const roundQuestion = fullProgression.join(' ');
 
-  return cons(generateRoundQuestion, rightAnswer);
+  return cons(roundQuestion, rightAnswer);
 };
 
 export default () => brainGames(gameRules, questionAnswer);

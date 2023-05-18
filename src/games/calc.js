@@ -29,10 +29,10 @@ const questionAnswer = () => {
   const firstOperand = generateRandomNum(1, 5);
   const secondOperand = generateRandomNum(1, 5);
   const randomSigns = operationsSigns[generateRandomNum(0, operationsSigns.length - 1)];
-  const generateRoundQuestion = `${firstOperand} ${randomSigns} ${secondOperand}`;
+  const roundQuestion = `${firstOperand} ${randomSigns} ${secondOperand}`;
   const rightAnswer = String(generateExpression(firstOperand, randomSigns, secondOperand));
 
-  return cons(generateRoundQuestion, rightAnswer);
+  return cons(roundQuestion, rightAnswer);
 };
 
 export default () => brainGames(gameRules, questionAnswer);

@@ -7,9 +7,9 @@ const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 const isEven = (num) => (num % 2 === 0);
 
 const questionAnswer = () => {
-  const generateRoundQuestion = generateRandomNum(1, 1000);
-  const rightAnswer = isEven(generateRoundQuestion) ? 'yes' : 'no';
-  return cons(generateRoundQuestion, rightAnswer);
+  const roundQuestion = generateRandomNum(1, 1000);
+  const rightAnswer = isEven(roundQuestion) ? 'yes' : 'no';
+  return cons(roundQuestion, rightAnswer);
 };
 
 export default () => brainGames(gameRules, questionAnswer);

@@ -14,10 +14,10 @@ const isPrime = (num) => {
 };
 
 const questionAnswer = () => {
-  const generateRoundQuestion = generateRandomNum(2, 100);
-  const rightAnswer = isPrime(generateRoundQuestion) ? 'yes' : 'no';
+  const roundQuestion = generateRandomNum(2, 100);
+  const rightAnswer = isPrime(roundQuestion) ? 'yes' : 'no';
 
-  return cons(generateRoundQuestion, rightAnswer);
+  return cons(roundQuestion, rightAnswer);
 };
 
 export default () => brainGames(gameRules, questionAnswer);

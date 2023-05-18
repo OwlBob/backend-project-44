@@ -14,12 +14,12 @@ const gcd = (firstNum, secondNum) => {
 const questionAnswer = () => {
   const firstNum = generateRandomNum(0, 100);
   const secondNum = generateRandomNum(0, 100);
-  const generateRoundQuestion = `${firstNum} ${secondNum}`;
+  const roundQuestion = `${firstNum} ${secondNum}`;
 
   const strRightAnswer = gcd(firstNum, secondNum);
   const rightAnswer = String(strRightAnswer);
 
-  return cons(generateRoundQuestion, rightAnswer);
+  return cons(roundQuestion, rightAnswer);
 };
 
 export default () => brainGames(gameRules, questionAnswer);
