@@ -22,32 +22,44 @@
 
 Показывается случайное число. Нужно ответить "yes", если число чётное, или "no" — если нечётное.
 
-[![asciicast](https://asciinema.org/a/h26tEkWfHQsYd5e4On7kGz1py.svg)](https://asciinema.org/a/h26tEkWfHQsYd5e4On7kGz1py)
+![победа](https://github.com/OwlBob/backend-project-44/blob/main/__images__/1-win.jpg)
+
+![поражение](https://github.com/OwlBob/backend-project-44/blob/main/__images__/1-lose.jpg)
 
 ### Brain-Calc:
 Игра: "Калькулятор" ⭐⭐
 
 Показывается случайное математическое выражение, которое нужно вычислить и записать правильный ответ.
 
-[![asciicast](https://asciinema.org/a/TysWWeI2s8qGrimTotmE6KI12.svg)](https://asciinema.org/a/TysWWeI2s8qGrimTotmE6KI12)
+![победа](https://github.com/OwlBob/backend-project-44/blob/main/__images__/2-win.jpg)
+
+![поражение](https://github.com/OwlBob/backend-project-44/blob/main/__images__/2-lose.jpg)
 
 ### Brain-Gcd:
 Игра: "НОД" ⭐⭐⭐
 
 Показывается два случайных числа. Нужно вычислить и ввести наибольший общий делитель этих чисел.
 
-[![asciicast](https://asciinema.org/a/MGRdgSeWjQb0RB7FjHh3L6Y4t.svg)](https://asciinema.org/a/MGRdgSeWjQb0RB7FjHh3L6Y4t)
+![победа](https://github.com/OwlBob/backend-project-44/blob/main/__images__/3-win.jpg)
+
+![поражение](https://github.com/OwlBob/backend-project-44/blob/main/__images__/3-lose.jpg)
 
 ### Brain-Progression:
 Игра: "Арифметическая прогрессия" ⭐⭐
 
 Показывается  ряд чисел, образующий арифметическую прогрессию, одно из чисел заменено на две точки (..). Нужно определить это число и записать правильный ответ.
 
-[![asciicast](https://asciinema.org/a/l7mDmlFNi7K5cnop0QT1tqloy.svg)](https://asciinema.org/a/l7mDmlFNi7K5cnop0QT1tqloy)
+![победа](https://github.com/OwlBob/backend-project-44/blob/main/__images__/4-win.jpg)
+
+![поражение](https://github.com/OwlBob/backend-project-44/blob/main/__images__/4-lose.jpg)
 
 ### Brain-Prime:
 Игра: "Простое ли число?" ⭐⭐
 
 Показывается случайное число. Нужно ответить "yes", если число простое, или "no" — если составное.
 
-[![asciicast](https://asciinema.org/a/RJxYUpk8zaCDycPqzUmGgU2l4.svg)](https://asciinema.org/a/RJxYUpk8zaCDycPqzUmGgU2l4)
+![победа](https://github.com/OwlBob/backend-project-44/blob/main/__images__/5-win.jpg)
+
+![поражение](https://github.com/OwlBob/backend-project-44/blob/main/__images__/5-lose.jpg)
+
+В любой из этих игр главное - это не победа, а результат, даже если он не верен (это всё ещё - результат ;)).
